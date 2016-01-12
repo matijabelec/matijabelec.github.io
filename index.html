@@ -24,10 +24,26 @@
 }
 #main{
 	display: block;
+	box-sizing: border-box;
 	position: relative;
 	margin: 40px 30px 60px;
 	padding: 12px 10px;
 }
+
+.col{
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+@media all and (min-width:400px) {
+	.col-md-50{
+		width: 50%;
+	}
+}
+
 .w-i-p{
 	border: 1px solid #af0000;
 	margin: 40px 25%;
@@ -46,11 +62,29 @@
     <h1><a href="http://matijabelec.github.io/">matijabelec.github.io</a></h1>
   </header>
   
-  <main id="main">
-    <h2>Hello</h2>
-    <p>How are You?</p>
-    
+  <main id="main">	
     <p class="w-i-p">Work-In-Progress</p>
+    
+    <div class="col col-md-50">
+      
+      <section>
+        <h2>Projects</h2>
+        <p>(...)</p>
+      </section>
+      
+    </div><div class="col col-md-50">
+      
+      <section>
+        <h2>News</h2>
+        <p>(...)</p>
+      </section>
+      
+      <section>
+        <h2>About me</h2>
+        <p>(...)</p>
+      </section>
+      
+    </div>
   </main>
   
   <footer id="footer">
