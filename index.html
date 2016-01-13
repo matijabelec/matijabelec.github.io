@@ -3,87 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>MatijaBelec.github.io</title>
-
-<style>
-*{margin:0; padding:0;}
-
-h2{ padding: 6pt 2pt 2pt; }
-p { padding: 2pt 4pt; }
-
-#header{
-	display: block;
-	background-color: #000;
-	color: #ddd;
-	padding: 12px 16px 6px;
-}
-#header a{
-	color: #ddd;
-	text-decoration: none;
-}
-#footer{
-	border-top: 1px solid;
-	margin: 20px 25px 10px;
-	padding: 5px 10px;
-	text-align: right;
-}
-#main{
-	display: block;
-	box-sizing: border-box;
-	position: relative;
-	margin: 40px 30px 60px;
-	padding: 12px 10px;
-}
-
-.col{
-	display: inline-block;
-	box-sizing: border-box;
-	position: relative;
-	margin: 0;
-	padding: 0;
-	vertical-align: top;
-	width: 100%;
-}
-@media all and (min-width:580px) {
-	.col-md-1  { width:   8.333333%; }
-	.col-md-2  { width:  16.666666%; }
-	.col-md-3  { width:  25.000000%; }
-	.col-md-4  { width:  33.333333%; }
-	.col-md-5  { width:  41.666666%; }
-	.col-md-6  { width:  50.000000%; }
-	.col-md-7  { width:  58.333333%; }
-	.col-md-8  { width:  66.666666%; }
-	.col-md-9  { width:  75.000000%; }
-	.col-md-10 { width:  83.333333%; }
-	.col-md-11 { width:  91.666666%; }
-	.col-md-12 { width: 100.000000%; }
-}
-@media all and (min-width:920px) {
-	.col-lg-1  { width:   8.333333%; }
-	.col-lg-2  { width:  16.666666%; }
-	.col-lg-3  { width:  25.000000%; }
-	.col-lg-4  { width:  33.333333%; }
-	.col-lg-5  { width:  41.666666%; }
-	.col-lg-6  { width:  50.000000%; }
-	.col-lg-7  { width:  58.333333%; }
-	.col-lg-8  { width:  66.666666%; }
-	.col-lg-9  { width:  75.000000%; }
-	.col-lg-10 { width:  83.333333%; }
-	.col-lg-11 { width:  91.666666%; }
-	.col-lg-12 { width: 100.000000%; }
-}
-
-.w-i-p{
-	border: 1px solid #af0000;
-	margin: 40px 25%;
-	padding: 15px 25px;
-	background-color: #dd2222;
-	color: #fafafa;
-	text-align: center;
-	font-size: 24pt;
-	font-weight: 600;
-}
-</style>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header id="header">
@@ -97,7 +17,8 @@ p { padding: 2pt 4pt; }
       
       <section>
         <h2>Projects</h2>
-        <p>(...)</p>
+	
+        <div id="my-github-projects"/>;
       </section>
       
     </div><div class="col col-md-6 col-lg-4">
@@ -118,5 +39,14 @@ p { padding: 2pt 4pt; }
   <footer id="footer">
     <p>Copyright &copy; <a href="https://hr.linkedin.com/in/matijabelec" target="_blank">Matija Belec</a></p>
   </footer>
+
+<script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/github-helper.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function() {
+    $("#my-github-projects").loadRepositories("matijabelec");
+  });
+</script>
+
 </body>
 </html>
