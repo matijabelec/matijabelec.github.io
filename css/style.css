@@ -1,7 +1,14 @@
 *{margin:0; padding:0;}
 
-h2{ padding: 6pt 2pt 2pt; }
+h2{ padding: 12pt 2pt 6pt; }
 p { padding: 2pt 4pt; }
+a{
+	text-decoration: none;
+	color: #0066ff;
+}
+a:hover{
+	color: #3388aa;
+}
 
 #header{
 	display: block;
@@ -17,7 +24,7 @@ p { padding: 2pt 4pt; }
 	border-top: 1px solid;
 	margin: 20px 25px 10px;
 	padding: 5px 10px;
-	text-align: right;
+	text-align: center;
 }
 #main{
 	display: block;
@@ -104,3 +111,4 @@ p { padding: 2pt 4pt; }
 .project-info>p.not-found{
 	color: #d44;
 }
+
